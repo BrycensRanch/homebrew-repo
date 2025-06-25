@@ -49,7 +49,7 @@ class Snapx < Formula
         ~/.config/SnapX
       On macOS, it's
         ~/Library/Application Support/SnapX
-       EOS
+    EOS
   end
 
   test do
