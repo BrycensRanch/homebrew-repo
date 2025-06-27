@@ -1,14 +1,14 @@
 class Snapx < Formula
   desc "Screenshot tool that handles images, text, and video (fork of ShareX)"
   homepage "https://github.com/BrycensRanch/SnapX"
-  version "0.3.0"
-  url "https://github.com/BrycensRanch/SnapX/archive/refs/tags/v#{version}.tar.gz"
+  url "https://github.com/BrycensRanch/SnapX/archive/refs/tags/v0.3.0.tar.gz"
   sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   license "GPL-3.0-or-later"
   head "https://github.com/BrycensRanch/SnapX.git", branch: "develop"
   # Uncomment to bump the package when still using the same SnapX version. Acts like the release field in snapx.spec
   # revision 1
 
+  uses_from_macos "curl"
   depends_on "dotnet" => :build
   depends_on "git" => :build
   # NativeAOT support
