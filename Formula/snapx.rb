@@ -8,7 +8,6 @@ class Snapx < Formula
   # Uncomment to bump the package when still using the same SnapX version. Acts like the release field in snapx.spec
   # revision 1
 
-  uses_from_macos "curl"
   depends_on "dotnet" => :build
   depends_on "git" => :build
   # NativeAOT support
@@ -16,6 +15,7 @@ class Snapx < Formula
   depends_on "ffmpeg@7"
   # This requirement is dictated by .NET.
   depends_on macos: :monterey
+  uses_from_macos "curl"
 
   on_macos do
     # Screenshotting on macOS is done via a Rust compat layer. We must compile it.
