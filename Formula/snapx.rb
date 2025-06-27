@@ -1,7 +1,7 @@
 class Snapx < Formula
   desc "Screenshot tool that handles images, text, and video (fork of ShareX)"
-  version "0.3.0"
   homepage "https://github.com/BrycensRanch/SnapX"
+  version "0.3.0"
   url "https://github.com/BrycensRanch/SnapX/archive/refs/tags/v#{version}.tar.gz"
   sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   license "GPL-3.0-or-later"
@@ -40,9 +40,9 @@ class Snapx < Formula
   def caveats
     <<~EOS
       On Ubuntu, you need to run
-        sudo apt install -y libvlc-dev xdg-utils
+        sudo apt install -y xdg-utils
       On Fedora, you need to run
-        sudo dnf in -y vlc-devel xdg-utils
+        sudo dnf in -y xdg-utils
       Additionally, SnapX hasn't been able to create the configuration file(s) it expects.
       You should place it in the configuration directory that it expects.
       On Linux, it's
