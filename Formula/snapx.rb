@@ -13,9 +13,9 @@ class Snapx < Formula
   # NativeAOT support
   depends_on "llvm" => :build
   depends_on "ffmpeg@7"
+  depends_on "brotli"
   # This requirement is dictated by .NET.
   depends_on macos: :monterey
-  depends_on "brotli"
   depends_on "openssl@3"
   uses_from_macos "curl"
 
