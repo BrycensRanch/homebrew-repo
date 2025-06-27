@@ -8,10 +8,12 @@ class Snapx < Formula
   # Uncomment to bump the package when still using the same SnapX version. Acts like the release field in snapx.spec
   # revision 1
 
+  depends_on "brotli"
   depends_on "dotnet" => :build
   depends_on "git" => :build
   # NativeAOT support
   depends_on "llvm" => :build
+  depends_on "openssl@3"
   depends_on "ffmpeg@7"
   # This requirement is dictated by .NET.
   depends_on macos: :monterey
