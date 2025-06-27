@@ -2,7 +2,6 @@ class Snapx < Formula
   desc "Screenshot tool that handles images, text, and video (fork of ShareX)"
   homepage "https://github.com/BrycensRanch/SnapX"
   url "https://github.com/BrycensRanch/SnapX/archive/refs/tags/v0.3.0.tar.gz"
-  version "0.3.0"
   sha256 "4534f8f4b1a70f0abd15346a9089a84aec1ec817d1fcf897dc0d8374ca77c129"
   license "GPL-3.0-or-later"
   head "https://github.com/BrycensRanch/SnapX.git", branch: "develop"
@@ -34,7 +33,8 @@ class Snapx < Formula
   def install
     ENV["SKIP_MACOS_VERSION_CHECK"] = "1"
     ENV["ELEVATION_NOT_NEEDED"] = "1"
-    ENV["VERSION"] = version
+    ENV["VERSION"] = "0.3.0"
+    ENV["PKGTYPE"] = "HOMEBREW"
     system "./build.sh", "install", "--prefix", prefix.to_s
   end
 
