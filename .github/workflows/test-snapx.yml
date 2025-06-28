@@ -27,8 +27,9 @@ jobs:
           id: set-up-homebrew
           uses: Homebrew/actions/setup-homebrew@master
 
-        - name: Install required dependencies
-          id: install-deps
+        - name: Install required dependencies (on Ubuntu)
+          id: install-deps-ubuntu
+          if: runner.os == "Linux"
           run: |
             sudo apt install -y xdg-utils
 
