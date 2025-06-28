@@ -27,6 +27,11 @@ jobs:
           id: set-up-homebrew
           uses: Homebrew/actions/setup-homebrew@master
 
+        - name: Install required dependencies
+          id: install-deps
+          run: |
+            sudo apt install -y xdg-utils
+
         - name: Brew Test Bot
           id: brew-test-bot
           run: |
