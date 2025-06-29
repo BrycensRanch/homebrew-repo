@@ -41,7 +41,7 @@ jobs:
           id: create-dirs-ubuntu
           if: runner.os == 'Linux'
           run: |
-            sudo mkdir /run/user/0/SnapX
+            sudo mkdir -p /run/user/0/SnapX
 
         - name: Brew Test Bot
           id: brew-test-bot
