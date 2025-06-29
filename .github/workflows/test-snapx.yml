@@ -36,6 +36,12 @@ jobs:
             sudo apt upgrade -y
             sudo apt install -y xdg-utils mesa-utils x11-xserver-utils
 
+        - name: Create required directories (on Ubuntu)
+          id: create-dirs-ubuntu
+          if: runner.os == 'Linux'
+          run: |
+            sudo mkdir /run/user/0/SnapX/
+
         - name: Brew Test Bot
           id: brew-test-bot
           run: |
