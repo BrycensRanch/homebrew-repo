@@ -31,7 +31,10 @@ jobs:
           id: install-deps-ubuntu
           if: runner.os == 'Linux'
           run: |
-            sudo apt install -y xdg-utils
+            sudo add-apt-repository ppa:kisak/kisak-mesa -y
+            sudo apt update -y
+            sudo apt upgrade -y
+            sudo apt install -y xdg-utils mesa-utils x11-xserver-utils
 
         - name: Brew Test Bot
           id: brew-test-bot
