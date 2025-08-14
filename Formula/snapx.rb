@@ -37,7 +37,7 @@ class Snapx < Formula
     ENV["ELEVATION_NOT_NEEDED"] = "1"
     ENV["VERSION"] = "0.3.0"
     ENV["PKGTYPE"] = "HOMEBREW"
-    system "./build.sh", "install", "--prefix", prefix.to_s
+    system "./build.sh", "install", "--prefix", prefix
   end
 
   def caveats
