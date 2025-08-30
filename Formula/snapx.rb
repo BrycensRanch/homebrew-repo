@@ -1,8 +1,8 @@
 class Snapx < Formula
   desc "Screenshot tool that handles images, text, and video (fork of ShareX)"
   homepage "https://github.com/SnapXL/SnapX"
-  version "0.4.0"
   url "https://github.com/SnapXL/SnapX/archive/refs/tags/homebrew.tar.gz"
+  version "0.4.0"
   sha256 "c53bc2070752ccc68b4ed225a35d2a721dfe6365c1d672f328686440bb9cb6c3"
   license "GPL-3.0-or-later"
   head "https://github.com/SnapXL/SnapX.git", branch: "develop"
