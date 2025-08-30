@@ -28,7 +28,6 @@ class Snapx < Formula
     depends_on "libx11"
     depends_on "libxcb"
     depends_on "libxrandr"
-    depends_on "openssl@3"
   end
 
   def install
