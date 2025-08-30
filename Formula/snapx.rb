@@ -1,8 +1,8 @@
 class Snapx < Formula
   desc "Screenshot tool that handles images, text, and video (fork of ShareX)"
   homepage "https://github.com/SnapXL/SnapX"
-  url "https://github.com/SnapXL/SnapX/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "4534f8f4b1a70f0abd15346a9089a84aec1ec817d1fcf897dc0d8374ca77c129"
+  url "https://github.com/SnapXL/SnapX/archive/0d5bd68.tar.gz"
+  sha256 "22e51679044f1c510f5b543dc356a385ad0eba6178ba26cd3b429727050e6692"
   license "GPL-3.0-or-later"
   head "https://github.com/SnapXL/SnapX.git", branch: "develop"
   # Uncomment to bump the package when still using the same SnapX version. Acts like the release field in snapx.spec
@@ -17,7 +17,6 @@ class Snapx < Formula
   # This requirement is dictated by .NET.
   depends_on macos: :monterey
   depends_on "openssl@3"
-  uses_from_macos "curl"
 
   on_macos do
     # Screenshotting on macOS is done via a Rust compat layer. We must compile it.
@@ -35,7 +34,6 @@ class Snapx < Formula
   def install
     ENV["SKIP_MACOS_VERSION_CHECK"] = "1"
     ENV["ELEVATION_NOT_NEEDED"] = "1"
-    ENV["VERSION"] = "0.3.0"
     ENV["PKGTYPE"] = "HOMEBREW"
     system "./build.sh", "install", "--prefix", prefix
   end
