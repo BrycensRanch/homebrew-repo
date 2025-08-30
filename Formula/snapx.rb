@@ -1,8 +1,8 @@
 class Snapx < Formula
   desc "Screenshot tool that handles images, text, and video (fork of ShareX)"
   homepage "https://github.com/SnapXL/SnapX"
-  url "https://api.github.com/repos/SnapXL/SnapX/tarball/0d5bd68"
-  sha256 "b167e9a64e7001239656d81179831babe63a2da7ea4e80f56ed7ca3f795177e5"
+  url "https://github.com/SnapXL/SnapX/archive/homebrew.tar.gz"
+  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   license "GPL-3.0-or-later"
   head "https://github.com/SnapXL/SnapX.git", branch: "develop"
   # Uncomment to bump the package when still using the same SnapX version. Acts like the release field in snapx.spec
