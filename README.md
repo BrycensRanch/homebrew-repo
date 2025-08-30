@@ -18,7 +18,7 @@ brew tap BrycensRanch/repo
 Then you can install whatever you need as normal
 
 ```sh
-brew install snapx-ui
+brew install snapx
 ```
 
 ### Bottles (Prebuilt Binaries)
