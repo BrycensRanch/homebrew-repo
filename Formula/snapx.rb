@@ -13,11 +13,9 @@ class Snapx < Formula
   depends_on "git" => :build
   # NativeAOT support
   depends_on "llvm" => :build
-  depends_on "brotli"
   depends_on "ffmpeg@7"
   # This requirement is dictated by .NET.
   depends_on macos: :monterey
-  depends_on "openssl@3"
 
   on_macos do
     # Screenshotting on macOS is done via a Rust compat layer. We must compile it.
