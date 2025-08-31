@@ -35,7 +35,7 @@ class Snapx < Formula
     ENV["SKIP_MACOS_VERSION_CHECK"] = "1"
     ENV["ELEVATION_NOT_NEEDED"] = "1"
     ENV["PKGTYPE"] = "HOMEBREW"
-    ENV["ALLOW_DOTNET_DOWNLOAD"] = "1" # Until .NET SDK and Runtime are updated in Homebrew
+    ENV["ALLOW_DOTNET_DOWNLOAD"] = "1"
     system "./build.sh", "install", "--prefix", prefix
   end
 
