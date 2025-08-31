@@ -46,4 +46,4 @@ jobs:
         - name: Brew Test Bot
           id: brew-test-bot
           run: |
-            brew test-bot snapx
+            brew test-bot snapx --publish
