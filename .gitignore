@@ -1,33 +1,325 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
+*.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/spec/examples.txt
+/test/tmp/
+/test/version_tmp/
+/tmp/
+
+# Used by dotenv library to load environment variables.
+# .env
+
+# Ignore Byebug command history file.
+.byebug_history
+
+## Specific to RubyMotion:
+.dat*
+.repl_history
+build/
+*.bridgesupport
+build-iPhoneOS/
+build-iPhoneSimulator/
+
+**/vendor/
+
+## Documentation cache and generated files:
+/.yardoc/
+/_yardoc/
+/doc/
+/rdoc/
+
+## Environment normalization:
+/.bundle/
+/vendor/bundle
+/lib/bundler/man/
+
+# for a library or gem, you might want to ignore these files since the code is
+# intended to run in multiple environments; otherwise, check them in:
+# Gemfile.lock
+# .ruby-version
+# .ruby-gemset
+
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+.rvmrc
+
+# Used by RuboCop. Remote config files pulled in from inherit_from directive.
+# .rubocop-https?--*
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+!*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+# Visual Studio 2015
+.vs/
+
+# Build outputs
+*.cab
+*.msi
+*.msix
+*.msixbundle
+*.msm
+*.msp
 *.exe
+*.a
+*.h
+*.d
+*.o
+*.pdf
+*.snap
+*.deb
+*.rpm
+*.AppImage
+*.flatpak
+*.dmg
+*.nupkg
+*.tar.gz
+*.tar.xz
+*.tar.bz2
+*.tar.lz
+*.tar**
+*.tgz
+*.7z
+*.run*
+builddir/
+*.pkg*
 *.exe~
-*.dll
-*.so
-*.dylib
-*.log
-*.txt
-*.tar*
 *bottle*.json
 
-# Test binary, built with `go test -c`
-*.test
+# SnapX
+Output/
+APIKeysLocal.cs
 
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
+# CMake
+cmake-build-*/
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
+# File-based project format
+*.iws
 
-# Go workspace file
-go.work
-go.work.sum
+# IntelliJ
+out/
+.idea/
 
-# env file
-.env
+# mpeltonen/sbt-idea plugin
+.idea_modules/
 
-# macOS Specific files
-*.DS_Store
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Editor-based HTTP Client
+http-client.private.env.json
+
+# Snapcraft
+parts/
+prime/
+stage/
+*.snap
+
+# Snapcraft global state tracking data (automatically generated)
+# https://forum.snapcraft.io/t/location-to-save-global-state/768
+/snap/.snapcraft/
+
+# Source archive packed by `snapcraft cleanbuild` before pushing to the LXD container
+/*_source.tar.bz2
+
+# OpenSSL-related files best not committed
+
+## Certificate Authority
+*.ca
+
+## Certificate
+*.crt
+
+## Certificate Sign Request
+*.csr
+
+## Certificate
+*.der
+
+## Key database file
+*.kdb
+
+## OSCP request data
+*.org
+
+## PKCS #12
+*.p12
+
+## PEM-encoded certificate data
+*.pem
+
+## Random number seed
+*.rnd
+
+## SSLeay data
+*.ssleay
+
+## S/MIME message
+*.smime
+
+# Emacs
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Org-mode
+.org-id-locations
+*_archive
+
+# flymake-mode
+*_flymake.*
+
+# eshell files
+/eshell/history
+/eshell/lastdir
+
+# elpa packages
+/elpa/
+
+# reftex files
+*.rel
+
+# AUCTeX auto folder
+/auto/
+
+# cask packages
+.cask/
+dist/
+
+# Flycheck
+flycheck_*.el
+
+# server auth directory
+/server/
+
+# projectiles files
+.projectile
+
+# directory configuration
+.dir-locals.el
+
+# network security
+/network-security.data
+
+# undo-tree
+*.~undo-tree~
+
+# Linux-related files
+# Temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# Metadata left by Dolphin file manager, which comes with KDE Plasma
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+# Log files created by default by the nohup command
+nohup.out
+
+# Vim-related-files
+# Swap
+[._]*.s[a-v][a-z]
+# comment out the next line if you don't need vector files
+!*.svg
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+*~
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
+
+# Notepad++ backups
+*.bak
+
+# Windows-related files
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# macOS-related files
 .DS_Store
+__MACOSX/
+.AppleDouble
+.LSOverride
+Icon[
+]
+
+# macOS thumbnails
+._*
+
+# macOS files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# macOS directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+.env/
